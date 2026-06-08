@@ -123,6 +123,7 @@ HELIX is a Cargo workspace of 10 independent crates. Each has one responsibility
   │  attention  │
   └─────────────┘
 ```
+---
 ## Contributing
 
 HELIX is open to contributions. The codebase is intentionally framework-free —
@@ -148,7 +149,6 @@ every PR should maintain that principle.
 - New ops must have unit tests compared against NumPy
 
 Open an issue first if you're planning something large.
----
 
 ## Crate-by-Crate Breakdown
 
