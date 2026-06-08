@@ -123,7 +123,31 @@ HELIX is a Cargo workspace of 10 independent crates. Each has one responsibility
   │  attention  │
   └─────────────┘
 ```
+## Contributing
 
+HELIX is open to contributions. The codebase is intentionally framework-free —
+every PR should maintain that principle.
+
+**Good first issues:**
+- Add a missing sampler strategy
+- Write unit tests for tensor ops against NumPy reference values
+- Improve error messages in helix-loader
+- Add a new model architecture (Llama, Mistral)
+
+**How to contribute:**
+1. Fork the repo
+2. Create a branch: `git checkout -b feat/your-feature`
+3. Write your code + tests
+4. Run `cargo test --all` and `cargo clippy -- -D warnings`
+5. Open a PR with a clear description of what and why
+
+**Rules:**
+- No ML framework dependencies — not even `tch-rs`
+- No `unwrap()` in library code
+- Every public function must have rustdoc
+- New ops must have unit tests compared against NumPy
+
+Open an issue first if you're planning something large.
 ---
 
 ## Crate-by-Crate Breakdown
