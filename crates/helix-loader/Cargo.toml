@@ -1,0 +1,15 @@
+[package]
+name = "helix-loader"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+helix-core = { path = "../helix-core" }
+thiserror.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+serde.workspace = true
+memmap2 = "0.9"
+
+[dev-dependencies]
+criterion.workspace = true

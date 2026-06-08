@@ -1,0 +1,16 @@
+[package]
+name = "helix-runtime"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+helix-core = { path = "../helix-core" }
+helix-model = { path = "../helix-model" }
+helix-sampler = { path = "../helix-sampler" }
+thiserror.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true

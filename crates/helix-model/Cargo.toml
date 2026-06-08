@@ -1,0 +1,10 @@
+[package]
+name    = "helix-model"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+helix-core = { path = "../helix-core" }
+thiserror.workspace = true
+serde.workspace     = true
+serde_json.workspace = true

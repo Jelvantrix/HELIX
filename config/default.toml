@@ -1,0 +1,25 @@
+[server]
+host            = "0.0.0.0"
+grpc_port       = 50051
+rest_port       = 8080
+max_concurrency = 4
+request_timeout_secs = 120
+
+[inference]
+max_seq_len     = 1024
+default_max_new_tokens = 256
+batch_size      = 1
+
+[sampler]
+temperature     = 0.8
+top_p           = 0.95
+top_k           = 50
+repetition_penalty = 1.1
+
+[memory]
+arena_size_mb   = 512
+kv_cache_max_mb = 2048
+
+[logging]
+level           = "info"
+format          = "pretty"   # "pretty" | "json"

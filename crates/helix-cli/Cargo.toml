@@ -1,0 +1,27 @@
+[package]
+name = "helix-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "helix"
+path = "src/main.rs"
+
+[dependencies]
+helix-core = { path = "../helix-core" }
+helix-runtime = { path = "../helix-runtime" }
+helix-loader = { path = "../helix-loader" }
+helix-sampler = { path = "../helix-sampler" }
+helix-server = { path = "../helix-server" }
+helix-bench = { path = "../helix-bench" }
+helix-profile = { path = "../helix-profile" }
+thiserror.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+clap.workspace = true
+owo-colors.workspace = true
+indicatif.workspace = true
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true

@@ -1,0 +1,10 @@
+/target
+/models
+*.safetensors
+*.bin
+*.gguf
+*.npz
+Cargo.lock
+.env
+trace_*.json
+bench_results/

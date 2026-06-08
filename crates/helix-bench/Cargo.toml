@@ -1,0 +1,16 @@
+[package]
+name = "helix-bench"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+helix-core = { path = "../helix-core" }
+helix-runtime = { path = "../helix-runtime" }
+helix-loader = { path = "../helix-loader" }
+thiserror.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+criterion.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true

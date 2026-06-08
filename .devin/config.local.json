@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(cargo build)",
+      "Exec(mkdir)",
+      "Exec(rm)"
+    ]
+  }
+}

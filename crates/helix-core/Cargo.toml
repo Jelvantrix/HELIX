@@ -1,0 +1,12 @@
+[package]
+name    = "helix-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+bytemuck.workspace  = true
+half.workspace      = true
+
+[dev-dependencies]
+approx = "0.5"

@@ -1,0 +1,23 @@
+[package]
+name = "helix-server"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+helix-core = { path = "../helix-core" }
+helix-runtime = { path = "../helix-runtime" }
+helix-loader = { path = "../helix-loader" }
+thiserror.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tokio.workspace = true
+tonic.workspace = true
+prost.workspace = true
+axum.workspace = true
+tower.workspace = true
+tower-http.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true
